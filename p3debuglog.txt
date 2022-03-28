@@ -1,1 +1,28 @@
+Breakpoint 1, main () at p3final.c:27
+27  {
+(gdb) n
+29    input_n_and_r(&n,&r);
+(gdb) s
+input_n_and_r (n=0x7ffc0ed6306c, r=0x7ffc0ed63070) at p3final.c:4
+4     printf("enter the n value\n");
+(gdb) n
+enter the n value
+5     scanf("%d",n);
+(gdb) n
+n
+6     printf("enter the r value\n"); 
+(gdb) n
+enter the r value
+7     scanf("%d",r);
+(gdb) n
+8   }
+(gdb) n
+main () at p3final.c:30
+30    find_ncr(n,r,&ncr);
+(gdb) n
 
+Program received signal SIGFPE, Arithmetic exception.
+0x0000557b1360083d in find_ncr (n=21883, r=248918368, ncr=0x7ffc0ed63074)
+    at p3final.c:20
+20    *ncr=fact(n)/(fact(r)*fact(n-r));
+(gdb) n

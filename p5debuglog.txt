@@ -1,1 +1,24 @@
-
+Breakpoint 1, main () at p5final.c:35
+35  {
+(gdb) n
+37    n=input_size();
+(gdb) n
+Enter the size of the array:
+n
+38    int a[n];
+(gdb) n
+39    input_array(n,a);
+(gdb) s
+input_array (n=0, a=0x7ffe9d097ae0) at p5final.c:13
+13    for (i=0; i<n; i++)
+(gdb) n
+18  }
+(gdb) n
+main () at p5final.c:40
+40    largest=find_largest (n,a);
+(gdb) n
+41    output(n,a,largest);
+(gdb) n
+42    return 0;
+(gdb) n
+43  }(gdb) n

@@ -1,1 +1,39 @@
-
+Breakpoint 1, main () at p1final.c:17
+17  {
+(gdb) n
+19    input(&num1, &den1, &num2, &den2);
+(gdb) s
+input (num1=0x7fff152a9bd0, den1=0x7fff152a9bd4, num2=0x7fff152a9bd8, 
+    den2=0x7fff152a9bdc) at p1final.c:4
+4     printf("Enter the numerator and denominator:\n");
+(gdb) n
+Enter the numerator and denominator:
+5     scanf("%d%d%d%d", num1, den1, num2, den2);
+(gdb) n
+n
+6   }
+(gdb) n
+main () at p1final.c:21
+21    add (num1, den1, num2, den2, &num3, &den3);
+(gdb) s
+add (num1=746588384, den1=22037, num2=746587744, den2=22037, 
+    num3=0x7fff152a9be0, den3=0x7fff152a9be4) at p1final.c:9
+9     *num3= num1*den2+num2*den1;
+(gdb) n
+10    *den3= den1*den2;
+(gdb) n
+11  }
+(gdb) n
+main () at p1final.c:22
+22    output (num1, den1, num2, den2, num3, den3);
+(gdb) s
+output (num1=746588384, den1=22037, num2=746587744, den2=22037, 
+    num3=1377878080, den3=485629369) at p1final.c:14
+14    printf("The sum of two fraction %d /%d and %d /%d is %d /%d", num1, den1, num2, den2, num3, den3);
+(gdb) n
+15  }
+(gdb) n
+main () at p1final.c:23
+23    return 0;
+(gdb) n
+24  } 

@@ -1,1 +1,9 @@
-
+Breakpoint 1, main () at p6final.c:23
+23    {
+(gdb) n
+26      totalwords=i;
+(gdb) n
+27      return 0;
+(gdb) n
+28    }
+(gdb) n

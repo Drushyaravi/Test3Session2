@@ -1,1 +1,39 @@
+Breakpoint 1, main () at p4final.c:40
+40  {
+(gdb) n
+42    d=input_degree()+1;
+(gdb) s
+input_degree () at p4final.c:3
+3   {
+(gdb) n
+5     printf("enter the degree of the polynomial\n");
+(gdb) n
+enter the degree of the polynomial
+6     scanf("%d",&n);
+(gdb) n
+n
+7     return n;
+(gdb) n
+8   }
+(gdb) n
+main () at p4final.c:44
+44    x=input_x();
+(gdb) s
+input_x () at p4final.c:10
+10  {
+(gdb) n
+12    printf("enter the value of x\n");
+(gdb) n
+enter the value of x
+13    scanf("%f",&n);
+(gdb) n
+14    return n;
+(gdb) n
+15  }
+(gdb) n
+main () at p4final.c:45
+45    float a[d];
+(gdb) n
+46    input_coefficients (d,a);
+(gdb) n
 

@@ -1,1 +1,57 @@
+Breakpoint 1, main () at p2final.c:41
+41    f1=input_fraction();
+(gdb) s
+input_fraction () at p2final.c:8
+8   {
+(gdb) n
+10    printf("Enter fraction:\n");
+(gdb) n
+Enter fraction:
+11    scanf("%d %d", &f.num, &f.den);
+(gdb) n
+n
+12    return f;
+(gdb) n
+13  }
+(gdb) n
+main () at p2final.c:42
+42    f2=input_fraction();
+(gdb) s
+input_fraction () at p2final.c:8
+8   {
+(gdb) n
+10    printf("Enter fraction:\n");
+(gdb) n
+Enter fraction:
+11    scanf("%d %d", &f.num, &f.den);
+(gdb) n
+12    return f;
+(gdb) n
+13  }
+(gdb) n
+main () at p2final.c:43
+43    f3=input_fraction();
+(gdb) s
+input_fraction () at p2final.c:8
+8   {
+(gdb) n
+10    printf("Enter fraction:\n");
+(gdb) n
+Enter fraction:
+11    scanf("%d %d", &f.num, &f.den);
+(gdb) n
+12    return f;
+(gdb) n
+13  }
+(gdb) n
+main () at p2final.c:44
+44    smallest=smallest_fraction (f1,f2,f3);
+(gdb) n
+
+Program received signal SIGFPE, Arithmetic exception.
+0x00005625940007f4 in smallest_fraction (f1=..., f2=..., f3=...)
+    at p2final.c:18
+18    a=f1.num*e/f1.den;
+(gdb) n
+n
 
